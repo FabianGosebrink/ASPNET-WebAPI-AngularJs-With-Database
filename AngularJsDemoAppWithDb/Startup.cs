@@ -22,7 +22,7 @@ namespace AngularJsDemoAppWithDb
             config.Routes.MapHttpRoute(
                 name: "DefaultApi",
                 routeTemplate: "api/{controller}/{id}",
-                defaults: new { action = RouteParameter.Optional, id = RouteParameter.Optional }
+                defaults: new { id = RouteParameter.Optional }
             );
 
             app.UseWebApi(config);
