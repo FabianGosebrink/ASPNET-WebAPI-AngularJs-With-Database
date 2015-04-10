@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <link rel="shortcut icon" href="../../assets/ico/favicon.ico">
+
+        <link href="app/lib/bootstrap/dist/css/bootstrap-theme.css" rel="stylesheet" />
+        <link href="app/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+        <title>MS Tech Days Demo Application</title>
+
+        <!-- Bootstrap core CSS -->
+        <style type="text/css">
+            body {
+                padding-top: 50px;
+            }
+
+            .starter-template {
+                padding: 40px 15px;
+                text-align: center;
+            }
+        </style>
+        <!-- Custom styles for this template -->
+        <!--<link href="starter-template.css" rel="stylesheet">-->
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+
+<body data-ng-app="DemoApp">
+
+    <data-ng-view></data-ng-view>
+
+    <script src="app/lib/jquery/dist/jquery.min.js"></script>
+    <script src="app/lib/angular/angular.js"></script>
+    <script src="app/lib/bootstrap/js/collapse.js"></script>
+    <script src="app/lib/angular-bootstrap/ui-bootstrap.js"></script>
+    <script src="app/lib/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+    <script src="app/lib/angular-moment/angular-moment.js"></script>
+    <script src="app/lib/angular-route/angular-route.min.js"></script>
+
+    <script src="app/application.js"></script>
+    <script src="app/Common/Services/ArrayHelpers.js"></script>
+    <script src="app/Home/homeModule.js"></script>
+    <script src="app/Home/Controllers/homeController.js"></script>
+    <script src="app/Home/Repositories/personRepository.js"></script>
+</body>
+</html>
