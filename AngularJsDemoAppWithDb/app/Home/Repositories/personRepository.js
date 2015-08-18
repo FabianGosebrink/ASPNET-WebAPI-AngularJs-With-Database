@@ -1,9 +1,6 @@
-/**
- * Created by Fabian on 01.04.2015.
- */
-
-"use strict";
-homeModule.factory("personRepository", [
+(function () {
+    'use strict';
+    angular.module("homeModule").factory("personRepository", [
     "$http", "$q", "common.services.arrayHelper", function ($http, $q, arrayHelper) {
 
         var urlPrefix = '/api/';
@@ -51,7 +48,7 @@ homeModule.factory("personRepository", [
 
             var deferred = $q.defer();
 
-            $http.delete(urlPrefix + "peoples/"+ personToDeleteId)
+            $http.delete(urlPrefix + "peoples/" + personToDeleteId)
                 .then(function (result) {
                     // Successful
 
@@ -88,4 +85,5 @@ homeModule.factory("personRepository", [
             allPeople: _allPeople
         }
     }
-]);
+    ]);
+})();

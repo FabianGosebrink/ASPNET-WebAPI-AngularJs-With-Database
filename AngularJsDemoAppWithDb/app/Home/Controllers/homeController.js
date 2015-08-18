@@ -1,9 +1,6 @@
-/**
- * Created by Fabian on 01.04.2015.
- */
-
-"use strict";
-homeModule.controller('homeController', [
+(function () {
+    'use strict';
+    angular.module("homeModule").controller('homeController', [
     '$scope', 'personRepository',
     function ($scope, personRepository) {
 
@@ -54,4 +51,5 @@ homeModule.controller('homeController', [
         $scope.addPerson = _addPerson;
         $scope.deletePerson = _deletePerson;
     }
-]);
+    ]);
+})();
